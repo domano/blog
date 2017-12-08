@@ -6,14 +6,15 @@ import Header from './header'
 import Footer from './footer'
 import RecentPosts from './recentPosts'
 import Subscribe from './subscribe'
+import TagCloud from './tagcloud'
 import BlogPost from './blogPost'
 import { Parallax } from 'react-parallax'
-import background from '../assets/brandi-redd-122054.jpg'
+import background from '../assets/wall.jpg'
 import { Grid, Row, Col, Navbar, Well, Nav, NavItem, Button, NavDropdown, FormGroup, InputGroup, FormControl, MenuItem, PanelGroup, Panel, ListGroup, ListGroupItem } from 'react-bootstrap'
 import ReactMarkdown from 'react-markdown'
 
 let bgStyle = {
-  backgroundColor: 'rgba(245, 245, 245, 0.4)'
+  backgroundColor: 'rgba(245, 245, 245, 0.1)'
 }
 
 export default ({links, blogPost}) => <Parallax bgImage={background} strength={400}>
@@ -29,6 +30,7 @@ export default ({links, blogPost}) => <Parallax bgImage={background} strength={4
         <PanelGroup>
         <RecentPosts links={links}/>
         <Subscribe />
+        <TagCloud/>
         </PanelGroup>
       </Col>
     </Row>

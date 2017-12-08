@@ -3,7 +3,7 @@ import IconGithub from 'react-icons/lib/go/mark-github'
 import { Navbar, Nav, NavItem, Button, NavDropdown, FormGroup, InputGroup, FormControl, MenuItem, PanelGroup, Panel, ListGroup, ListGroupItem } from 'react-bootstrap'
 
 export default () =>
-  <Navbar inverse>
+  <Navbar>
     <Navbar.Header>
       <Navbar.Brand>
         Dinos Blog
